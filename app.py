@@ -6,15 +6,11 @@ app = Flask(__name__)
 def home():
     return """
     <div style="display:flex;">
-	    <p style="padding-right:10px;"><a href="/about">About</a></p>
+	    <p style="padding-right:10px;"><a href="/">About</a></p>
 	    <p style="padding-right:10px;"><a href="/pictures">Pictures</a></p>
 	    <p style="padding-right:10px;"><a href="/biography">Biography</a></p>
 	</div>
     """
-
-@app.route("/about")
-def about():
-	return("<a href='/'>This is about</a>")
 
 @app.route("/pictures")
 def pictures():
